@@ -39,19 +39,3 @@ class LinkedQueue:
             elementos.append(str(atual.dado))
             atual = atual.prox
         return "Frente -> " + " -> ".join(elementos) + " -> None"
-
-fila = LinkedQueue()
-print("Fila vazia:", fila)
-
-fila.enqueue("Primeiro")
-fila.enqueue("Segundo")
-print("\nApós enfileirar 2 elementos:")
-print(fila)
-
-print("\nFront:", fila.frente)
-print("Tamanho:", fila.tamanho)
-
-removido = fila.dequeue()
-print("\nElemento removido:", removido)
-print("Fila após dequeue:")
-print(fila)

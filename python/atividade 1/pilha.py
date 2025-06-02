@@ -37,30 +37,3 @@ class LinkedStack:
             atual = atual.prox
         return "Topo -> " + " -> ".join(elementos) + " -> None"
 
-
-#teste
-p = LinkedStack()
-
-print("Pilha inicial:", p)
-print("Inserindo elementos:")
-p.push(10)
-print(p)
-p.push(20)
-print(p)
-p.push(30)
-print(p)
-
-print(f"Tamanho: {p.tamanho}")  
-print(f"Topo: {p.topo}")       
-
-print("\nRemovendo elementos:")
-print("Removido:", p.pop())  
-print(p)
-print("Removido:", p.pop())  
-print(p)
-print("Removido:", p.pop())  
-print(p)
-
-print("Tentando remover de pilha vazia:")
-print("Removido:", p.pop())
-print(p)
